@@ -1,0 +1,46 @@
+<html xmlns:th="http://thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Adicionar Filme</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+        	<br/>
+            <div class="row justify-content-md-center">
+                <div class="col-sm-7">
+                	<div class="row"> 
+						<div class="col-sm-9">
+	                		<h3>Adicionar Filme</h3>
+	                	</div> 
+	                    <div class="col-sm-3"> 
+		                    <a href="/filmes">
+		                		<button type="button" class="btn btn-outline-primary">Lista de Filmes</button>
+		                	</a>
+						</div>
+					</div>
+                    <form method="POST">
+                        <div class="form-group">
+                            <label for="inputFilme">Filme</label>
+                            <input type="text" class="form-control" id="inputFilme" name="titulo">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAvaliacao">Avaliação</label>
+                            <input type="text" class="form-control" id="inputAvaliacao" name="avaliacao">
+                        </div>
+
+                        <button type="submit" class="btn btn-success">Adicionar</button>
+                    </form>
+
+                </div>
+                <div class="col-sm-5">
+                	
+                </div>    
+            </div>
+        </div>
+        
+    </body>
+</html>
